@@ -36,6 +36,6 @@ public class Korpa {
         for( int i=0; i<broj; i++){
             cijena=cijena+artikli[i].getCijena();
         }
-        return cijena
+        return cijena;
     }
 }
