@@ -31,7 +31,7 @@ public class Korpa {
         }
         return  null;
     }
-    public  int dajUkupnuCijaenuArtikala(){
+    public  int dajUkupnuCijenuArtikala(){
         int cijena=0;
         for( int i=0; i<broj; i++){
             cijena=cijena+artikli[i].getCijena();
