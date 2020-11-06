@@ -33,6 +33,7 @@ public class Supermarket {
     }
 
 
-
-
+    public int getBroj() {
+        return broj;
+    }
 }
