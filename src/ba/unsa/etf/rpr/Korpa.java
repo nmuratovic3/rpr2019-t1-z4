@@ -4,6 +4,13 @@ public class Korpa {
     private Artikl[] artikli = new Artikl[50];
     private int broj = 0;
 
+    public void setBroj(int broj) {
+        this.broj = broj;
+    }
+    public int getBroj(){
+        return  this.broj;
+    }
+
     public boolean dodajArtikl(Artikl a) {
         if (broj < 50) {
             artikli[broj] = new Artikl(a.getNaziv(), a.getCijena(), a.getKod());
@@ -16,6 +23,7 @@ public class Korpa {
     public Artikl[] getArtikli() {
         return artikli;
     }
+
     public Artikl izbaciArtiklSaKodom(String kod){
         for(int i = 0; i<broj; i++) {
             if(artikli[i].getKod().equals(kod)){
